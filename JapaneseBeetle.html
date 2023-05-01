@@ -118,11 +118,13 @@
 									</p>
 									<script src="https://gist.github.com/codyprouty/2609f31f4c19909e533810652d4c8e11.js"></script>
 									<p>
-										Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus.
+										Next, we have xy coordinates, but Meteostat requires a z coordinate (i.e. elevation). We could pick a number close to most site's elevations,
+										but doing this will still make some sites undefined. Let's use <a href="opentopodata.org">Open Topo Data</a> to fill these gaps.
+										We are going to make a loop that gives each line's coordinates and receives the elevation. We will append this elevation to an array,
+										and then append the array as a column in our dataframe.
 									</p>
+									<script src="https://gist.github.com/codyprouty/81d89b6535324c6f74af1d84ef0f8d93.js"></script>
+									
 									<header>
 										<p>Remote sensing data</p>
 									</header>
