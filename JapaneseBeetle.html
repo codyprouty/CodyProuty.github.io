@@ -116,10 +116,9 @@
 										as well as the 24 hours before traps are deployed. For brevity, we are only going to look at the 24 hours while traps were deployed here.
 										Meteostat's weather data is easily collectible using their API. Unfortunately, our date and time are in the wrong format.
 										To communicate with Meteostat, we need year, month, and day in separate columns along with hour and minute in distinct columns as well.
-										So, let's split dates and times (for both trap deployment and collection) into disctinct columns.
-									</p>
-									<script src="https://gist.github.com/codyprouty/2609f31f4c19909e533810652d4c8e11.js"></script>
-									<p>
+										To do this, I split dates and times (for both trap deployment and collection) into disctinct columns using str.split in Python.
+										</p>
+										<p>
 										Next, we have xy coordinates, but Meteostat requires a z coordinate (i.e. elevation). We could pick a number close to most site's elevations,
 										but doing this will still make some sites undefined. Let's use <a href="opentopodata.org">Open Topo Data</a> to fill these gaps.
 										We are going to make a loop that gives each line's coordinates and receives the elevation. We will append this elevation to an array,
@@ -138,6 +137,9 @@
 									<header>
 										<p>Remote sensing data</p>
 									</header>
+									<p>
+										Next up, we are going to collect satellite data from the Sentinel 2 mission. 
+									</p>
 								</section>
 								<section>
 									<header>
