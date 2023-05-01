@@ -112,8 +112,11 @@
 									</header>
 									<p>
 										To collect weather data, we used <a href="https://meteostat.net/en/about">Meteostat</a>, an open source weather and climate data vendor.
-										Meteostat's weather data is easily collectible using their API. 
+										Meteostat's weather data is easily collectible using their API. Unfortunately, our date and time are in the wrong format.
+										To communicate with Meteostat, we need year, month, and day in separate columns along with hour and minute in distinct columns as well.
+										So, let's split dates and times (for both trap deployment and collection) into disctinct columns.
 									</p>
+									<script src="https://gist.github.com/codyprouty/2609f31f4c19909e533810652d4c8e11.js"></script>
 									<p>
 										Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
 										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
