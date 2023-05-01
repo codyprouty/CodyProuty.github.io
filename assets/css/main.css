@@ -2297,6 +2297,10 @@ input, select, textarea {
 				color: #e0e2e4;
 				background: rgba(64, 0, 0, .5);
 			}
+			body {
+				margin: 20px;
+				font: 16px 'Open Sans', sans-serif;
+			}
 
 
 
