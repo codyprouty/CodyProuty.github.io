@@ -138,8 +138,17 @@
 										<p>Remote sensing data</p>
 									</header>
 									<p>
-										Next up, we are going to collect satellite data from the Sentinel 2 mission. I was able to find a shapefile for land use in the Twin Cities,
-										and in R, I used the coordinates to remove all polygons except for those that were used in this project.
+										Next up, we are going to collect satellite data from the Sentinel 2 mission. This is a good option because it has a 20 meter resolution,
+										which will be extremely useful for our small study sites. We are interested in whether the vegetation (quantified as average NDVI)
+										predicts the abundance of beetles or infection prevalence of <i>Ovavesicula</i>. We want to do this on a per plot basis, which requires
+										us to convert our xy coordinates to polygons. I was able to find a shapefile for land use in the Twin Cities,
+										and in R, I used the coordinates to remove all polygons except for those that were used in this project. This leaves us with shapes that outline each
+										study site. 
+									</p>
+
+									<p>
+										To access the data we will use Google Earth Engine. We will collect images from the time of year we are interested in quantifying NDVI from.
+										We will need to get the total boundary of our area of interest to select the images from the satellite.
 									</p>
 								</section>
 								<section>
