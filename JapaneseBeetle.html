@@ -118,6 +118,7 @@
 										To communicate with Meteostat, we need year, month, and day in separate columns along with hour and minute in distinct columns as well.
 										To do this, I split dates and times (for both trap deployment and collection) into disctinct columns using str.split in Python.
 										</p>
+										<p>Insert Map...</p>
 										<p>
 										Next, we have xy coordinates, but Meteostat requires a z coordinate (i.e. elevation). We could pick a number close to most site's elevations,
 										but doing this will still make some sites undefined. Let's use <a href="opentopodata.org">Open Topo Data</a> to fill these gaps.
