@@ -1689,15 +1689,19 @@ input, select, textarea {
 
 /* Image */
 
-	.image.new img {
+	.image {
 		display: inline-block;
-		width:100%;
 		outline: 0;
 	}
 
 		.image img {
 			display: inline-block;
 			width: 50%;
+		}
+
+		.image.new img {
+			display: inline-block;
+			width: 100%;
 		}
 
 		.image top {
