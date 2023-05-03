@@ -1699,6 +1699,11 @@ input, select, textarea {
 			width: 50%;
 		}
 
+		.image top {
+			display: inline-block;
+			width: 100%;
+		}
+
 		.image.centered {
 			display: block;
 			margin: 0 0 2em 0;
