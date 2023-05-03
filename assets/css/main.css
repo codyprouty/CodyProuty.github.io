@@ -1689,7 +1689,7 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
+	.image.new img {
 		display: inline-block;
 		outline: 0;
 	}
