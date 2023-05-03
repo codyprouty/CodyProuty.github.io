@@ -1695,7 +1695,7 @@ input, select, textarea {
 	}
 
 		.image img {
-			display: block;
+			display: inline-block;
 			width: 50%;
 		}
 
