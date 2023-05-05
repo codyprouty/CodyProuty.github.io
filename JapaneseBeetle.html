@@ -118,7 +118,6 @@
 										To communicate with Meteostat, we need year, month, and day in separate columns along with hour and minute in distinct columns as well.
 										To do this, I split dates and times (for both trap deployment and collection) into disctinct columns using str.split in Python.
 										</p>
-										<p>Insert Map...</p>
 										<p>
 										Next, we have xy coordinates, but Meteostat requires a z coordinate (i.e. elevation). We could pick a number close to most site's elevations,
 										but doing this will still make some sites undefined. Let's use <a href="opentopodata.org">Open Topo Data</a> to fill these gaps.
@@ -136,6 +135,8 @@
 										variability in the data. Our code is also now easily editable to account for other hypotheses, such as the weather 24 hours prior to sampling having an 
 										effect, or the average weather for the year prior!
 									</p>
+									<p>Below is the effect of our weather data on beetle abundance</p>
+									<a href="images/WeatherBeetles (1).png" class="image img"><img src="images/WeatherBeetles (1).png" alt="" /></a>
 									<header>
 										<p>Remote sensing data</p>
 									</header>
