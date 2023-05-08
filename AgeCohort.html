@@ -90,11 +90,18 @@
 									<p>Model selection</p>
 								</header>
 								<p>
-									We constructed multiple generalized linear mixed effects models (GLMMs) in R. We then utilized Akaike's Information Criterion (AICc)
-                                    (Akaike 1998; Grueber et al. 2011; Symonds and Moussalli 2011) to perform model selection and evaluate candiate models for each response variable.
-                                    We considered models with smaller AiCc values and fewer predictor variables to be more parsimonious (Burnham and Anderson 2004). Using the most 
-                                    parsimonious model for each experiment, we calculated estimated marginal means (EMMs) and 95% confidence intervals of the response variables 
-                                    across worker age.
+									We investigated the presence (1) of dye in worker guts and (2) of workers on PSPs by constructing generalized linear mixed effects models in R (version 1.4.3). 
+                                    We then utilized Akaike’s Information Criterion (AICc) (Akaike 1998; Grueber et al. 2011; Symonds and Moussalli 2011) to perform model selection and evaluate 
+                                    our candidate models for each experiment. This exploratory method is an alternative to traditional null-hypothesis significance testing and thus does not generate 
+                                    p-values (Grueber et al. 2011; Symonds and Moussalli 2011; Tredennick et al. 2021). We calculated AICc scores, change in AICc scores (∆i=AICci − minimum AICc), 
+                                    and AICc weight with MuMIn::model.sel (Bartoń 2022). We considered models with smaller AICc values and fewer predictor variables to be more parsimonious 
+                                    (Burnham and Anderson 2004). We averaged our top models using MuMIn::model_avg (Bartoń 2022) and then selected the full average, or zero 
+                                    method, to account for high model selection uncertainty (Grueber et al. 2011; Symonds and Moussalli 2011). 
+                                    We examined estimate sizes from the averaged model to identify the important variables for our system and select the most parsimonious model for the rest of the analysis. 
+                                    With the most parsimonious model for each experiment, Estimated Marginal Means (EMMs) and 95% 
+                                    confidence intervals of the response variables were calculated across worker age using emmeans::emmeans (Lenth 2022). We visually assessed various model 
+                                    assumptions for our most parsimonious  models using simulated residuals in DHARMa:: simulateResiduals (Hartig 2022).
+
 								</p>
 								<section>
 									<header>
