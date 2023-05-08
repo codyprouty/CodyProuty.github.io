@@ -104,7 +104,12 @@
 										Weather data was collected from the University of Florida IFAS Florida Automated Weather Network (FAWN). Hourly measurements were averaged for 
                                         each day of the experiment. We selected temperature at 60 cm (C), rainfall (cm), radiation (W/m^2), and humidity (%). We evaluated the effect of the 
                                         environmental variables on each response variable in our system by visually assessing a plot of each unscaled environmental variable against the residuals 
-                                        of a GLMM containing all components of the corresponding full model, minus the environmental variable being evaluated.
+                                        of a GLMM containing all components of the corresponding full model, minus the environmental variable being evaluated. 
+                                        We examined the direction and steepness of a slope from a generalized linear model that represented the relationship between each environmental 
+                                        variable and our system. Slopes nearly or equal to zero indicated a negligible effect of the environmental variable. 
+                                        We elected to assess each environmental variable against the residuals of our selected models instead of raw means of each response variable to 
+                                        account for the various terms and random effects in our models, similar to how the averaged model estimates were calculated.
+
 									</p>
 								</section>
 								<section>
