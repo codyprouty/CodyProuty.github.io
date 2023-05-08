@@ -85,31 +85,24 @@
                                     fondant mixed with dye (positive control), and (4) three colonies received model clay mixed with dye (consumption control). 
                                     
                                 </p>
-								<a href="images/VoltoCount.png" class="image img"><img src="images/VoltoCount.png" alt="" /></a>
 								<header>
-									<p>Figure 1: Linear regression for volume x quantity of Japanese beetles.</p>
-									<p>Quantification of Ovavesicula popillae</p>
+                                    <h3>Data analysis</h3>
+									<p>Model selection</p>
 								</header>
 								<p>
-									Once volumetric and/or count data were taken, Japanese beetles were separated into either saline or
-									ethanol (following methods from <a href="https://academic.oup.com/jee/article/115/5/1432/6603866">Smitley et al. 2022</a>). 
-									Japanese beetles stored in saline were then dissected and <i>Ovavesicula popillae</i> spores were counted using microscopy 
-									techniques (such as Cantwell, 1970). Beetles stored in ethanol had DNA extracted and spores were quantified using qPCR.
-								</p>
-								<p>
-									Remaining data used in the final analysis were collected using data mining techniques in Python.
+									We constructed multiple generalized linear mixed effects models (GLMMs) in R. We then utilized Akaike's Information Criterion (AICc)
+                                    (Akaike 1998; Grueber et al. 2011; Symonds and Moussalli 2011) to perform model selection and evaluate candiate models for each response variable.
+                                    We considered models with smaller AiCc values and fewer predictor variables to be more parsimonious (Burnham and Anderson 2004). Using the most 
+                                    parsimonious model for each experiment, we calculated estimated marginal means (EMMs) and 95% confidence intervals of the response variables 
+                                    across worker age.
 								</p>
 								<section>
 									<header>
-										<h3>Data manipulation in R</h3>
+										<h3>Environmental covariates</h3>
 									</header>
 									<p>
-										Large scale data is rarely clean, so to make this dataset usable, we need to do some tidying.
-										Our datasheet includes information for the number of beetles collected for saline, ethanol, and volume (or count) data.
-										So, we first need to subset our data to just be volume.
-										Next, we can write a for loop where NA values for beetle counts are replaced by volumetric data.
+										
 									</p>
-									<script src="https://gist.github.com/codyprouty/233b61176f7c6d0b7fa6138a9a87426c.js"></script>
 								</section>
 								<section>
 									<header>
