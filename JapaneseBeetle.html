@@ -151,8 +151,10 @@
 									<script src="https://gist.github.com/codyprouty/2cd0ef559a3dd5495ba2e8c72f065812.js"></script>
 
 									<a href="images/SitesPoly.png" class="image new"><img src="images/SitesPoly.png" alt="" /></a>
+									<header>
 									<p>Figure 2: Study sites used in this project outlined in polygons. Data for land use was pulled from 
 										<a href="https://www.mngeo.state.mn.us/chouse/land_use.html">Minnesota Geospatial Information Office</a></p>
+										</header>
 									<p>
 										To access the data we will use Google Earth Engine. We will collect images from the time of year we are interested in quantifying NDVI from.
 										We will need to get the total boundary of our area of interest to select the images from the satellite. First, we set up Earth Engine.
@@ -167,6 +169,11 @@
 										Below is an example of one of the images.
 									</p>
 									<a href="images/NDVIPic.PNG" class="image new"><img src="images/NDVIPic.PNG" alt="" /></a>
+									<header>
+									<p>Figure 3: Imagery from Sentinel 2 satellite, NDVI calculated from bands 8 and 4 (NIR and red).
+										Given that some sites fall outside of our bounds, we need to use multiple images to composite NDVI calculations.
+									</p>
+									</header>
 									<p>
 										Next, we can make a for loop that exports those images to Google Drive.
 									</p>
@@ -182,6 +189,7 @@
 										statistical for variability. If we want, we also now have the code to select multiple points in time that we can compare to.
 									</p>
 									<a href="images/NDVI.png" class="image new"><img src="images/NDVI.png" alt="" /></a>
+									
 								</section>
 								<section>
 									<header>
