@@ -156,7 +156,38 @@
 								</header>
 								<header>
                                     <h3>Data analysis</h3>
-									<p></p>
+									<p>
+										To test for significant effects of treatment variables (monarch density (6 or 12 monarchs), 
+										infection status (infected or uninfected), sex, and plant species (swamp or tropical)) on monarch visitation rate, 
+										we used generalized linear mixed models with a normal distribution and exponentiated linear predictors in the ‘lme4’ package (Bates et al. 2015). 
+										Monarch visitation rate was calculated by dividing the number of visits per monarch to leaves by the time interval (in hours) monarchs were observed.
+										 We used the model structure: [monarch visitation rate ~ sex × density × infection status + plant species + number of matings + genetic lineage (random effect) 
+										 + cage number (random effect) + total time spent in cage (random effect)]. 
+										 Although three-way interactions were tested for, only the three two-way pairs were reported to retain simplicity. 
+										 Monarch contact rate with leaves was correlated with the total amount of time monarchs spent in cages (χ2 = 8, p = 0.004), 
+										 and was included as a random effect in the full model.
+									</p>
+									<p>
+										To test for effects on the rate of visitation to plants, we again used generalized linear mixed models with a normal distribution 
+										and  exponentiated linear predictors. The model structure used here was: [visitation rate to plants ~ density × infection treatment 
+										(IF:HM or HF:IM) + plant species + number of open flowers + number of leaves + plant location (random effect) + cage number (random effect)]. 
+										The plant location within cages was significant, so it remained in the final model. 
+									</p>
+									<p>
+										To test the effects of treatment variables on the number of spores recovered in the bioassay, we first used generalized linear mixed models with 
+										binomial error structures to test effects on prevalence of spores in monarchs. We next tested for differences in the spore load of only infected 
+										individuals using a negative binomial distribution (theta = 0.6) and exponentiated linear predictors. For both response variables in the bioassay,
+										 the model structure was: [response variable ~ infection treatment (IF:HM or HF:IM) × monarch density × plant species + sex + day leaves were sampled + 
+										 cage number (random effect)]. 
+									</p>
+									<p>
+										Finally, to test the effects of treatment variables on the number of spores on leaf samples, we first used binomial error structures to test effects 
+										on prevalence of spores on leaves. Next, we used generalized linear mixed models on the spore load for infected monarchs with negative binomial error 
+										structures (theta =1). Both analyses were performed with the model structure: [response variable ~ infection treatment (IF:HM or HF:IM) + day sampled + 
+										monarch density + plant species + number of open flowers + plant visitation rate + number of leaves on plant + plant number (random effect) + cage number 
+										(random effect)]. In the analyses for the bioassay and leaf taping, controls were removed and only treatments with infected individuals were included after
+										 an initial analysis with controls included. In all analyses, residual distributions were checked using the DHARMa package in R (Hartig, 2022).
+									</p>
 								</header>
 								<p>
 									
