@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Cody Prouty</a></h1>
+
+					<!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Research.html">Projects</a></li>
+							<li><a href="Press.html">Press Coverage</a></li>
+                            <li class="current">
+                                <a href="Portfolio.html">Data Science Portfolio</a>
+                                <ul>
+                                    <li><a href="JapaneseBeetle.html">Japanese Beetle Project</a></li>
+                                    <li><a href="AgeCohort.html">Age Cohort Analysis</a></li>
+                                    <li><a href="MonarchAnalysis.html">Monarch Analysis</a></li>
+                                    <!--
+                                    <li>
+                                        <a href="#">Phasellus consequat</a>
+                                        <ul>
+                                            <li><a href="#">Magna phasellus</a></li>
+                                            <li><a href="#">Etiam dolore nisl</a></li>
+                                            <li><a href="#">Veroeros feugiat</a></li>
+                                            <li><a href="#">Nisl sed aliquam</a></li>
+                                            <li><a href="#">Dolore adipiscing</a></li>
+                                        </ul>
+                                    </li>
+                                -->
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="Publications.html">Publications</a>
+                            </li>
+                            <li><a href="CV.html">CV</a></li>
+                            <!---
+                            <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            -->
+                        </ul>
+                    </nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section class="box">
+										<header>
+											<h3>Projects</h3>
+										</header>
+										<p>Please view the full write ups for each portfolio item.</p>
+										<ul class="divided">
+											<li><a href="JapaneseBeetle.html">Japanese beetle project</a></li>
+											<li><a href="AgeCohort.html">Honey bee age cohort analysis</a></li>
+											<!--<li><a href="MonarchAnalysis.html">Monarch butterfly infection transmission</a></li>-->
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Content -->
+									<article class="box post">
+										<header>
+											<h2>Portfolio</h2>
+                                        </header>
+										<p>
+											This page features descriptions of projects that use data science techniques or interesting analyses. These 
+											analyses are not yet published, and therefore, the data and code are not publically available.
+											Projects described here use Python to gather information from APIs, automate processes, and gather data.
+											Data analyses, cleaning, and predictions were made using R. In both languages, I have written custom functions,
+											created outputs for data visualization, and used a variety of external packages to complete tasks that align with 
+											hypotheses. All of these projects are ecological and entomological in nature, however, the concepts have broad implications
+											across disciplines. 
+										</p>
+                                        <header>
+											<h3>Japanese beetle project</h3>
+										</header>
+										<p>
+											We collected Japanese beetles every two weeks at 44 sites across Twin Cities, Minnesota.
+                                            To help describe and control for variability, I gathered weather and remote sensing data using Python to communicate with various APIs.
+                                            R and Python were used interchangably throughout, due to strengths and weaknesses of each.
+
+										</p>
+										<p>
+											Field and spore (microscopy and DNA) data were collected collaboratively with lab members. Data mining and analysis shown here were independent.
+										</p>
+										<p>
+
+										</p>
+										<section>
+										<a href="images/NDVI.png" class="image new"><img src="images/NDVI.png" alt="" /></a>
+										<li><a href="JapaneseBeetle.html">Japanese beetle project</a></li>
+										</section>
+										<section>
+											<header>
+												<h3>Age cohort analysis</h3>
+											</header>
+											<p>
+												Honey bees of specific ages in a colony have defined jobs, that change over the course of an individual bee's life.
+                                                Worker bees with certain jobs interact with food resources differently. For instance, a nurse bee (between 4 and 12 days old) uses 
+                                                bee bread as food for larvae. Forager bees (22 to 42 days) collect pollen and nectar from plants. In this experiment, researchers
+                                                were interested in the age at which bees consumed pollen patties, a supplemental food source given to colonies by beekeepers.
+                                                In this analysis, we used model selection techniques, controlled for inconsistencies, utilized weather data, created a temporal autocorrelation structure,
+                                                and accounted for background mortality in bees.   
+											</p>
+											<p>
+												Data were collected by Emily Noordyke as part of a master's thesis, advised by James D. Ellis. Analysis was conducted collaboratively by 
+                                                Kaylin Kleckner (PhD student at the University of Florida) and Cody Prouty.
+											</p>
+											<a href="images/chart (1).png" class="image new"><img src="images/chart (1).png" alt=""/></a>
+											<li><a href="AgeCohort.html">Honey bee age cohort analysis</a></li>
+										</section>
+										<!--<section>
+											<header>
+												<h3>Monarch butterfly disease transmission</h3>
+											</header>
+											<p>
+												Monarchs have an obligate protozoan ectoparasite, <i>Ophryocystis elektroscirrha</i>, that is transmitted by adult monarchs
+												to larvae when they land on plants and oviposit. Horizontal, non-infectious transmission can also be made between adults.
+												Additionally, spores of <i>Ophryocystis elektroscirrha</i> persist in the environment, so environmental transmission is possible.
+												Within cages, we manipulated many variables, including density of monarchs, plants, combinations of infected vs. healthy monarchs,
+												and the species of milkweed present in cages.
+											</p>
+											<p>
+												Data were collected by then-technician Hayley Schroeder, advised by Sonia Altizer. Analysis was conducted by Cody Prouty,
+												with feedback from all authors.
+											</p>
+											<a href="images/InfectionDensitySex.png" class="image new"><img src="images/InfectionDensitySex.png" alt=""/></a>
+											<li><a href="MonarchAnalysis.html">Monarch butterfly infection transmission</a></li>
+										</section>
+									-->
+									</article>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer 
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								<section>
+									<header>
+										<h2>Blandit nisl adipiscing</h2>
+									</header>
+									<ul class="dates">
+										<li>
+											<span class="date">Jan <strong>27</strong></span>
+											<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
+											<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>23</strong></span>
+											<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
+											<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>15</strong></span>
+											<h3><a href="#">Magna tempus lorem feugiat</a></h3>
+											<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>12</strong></span>
+											<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
+											<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>10</strong></span>
+											<h3><a href="#">Blandit tempus aliquam?</a></h3>
+											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>What's this all about?</h2>
+									</header>
+									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+									<p>
+										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
+										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
+										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+									</p>
+									<footer>
+										<ul class="actions">
+											<li><a href="#" class="button">Find out more</a></li>
+										</ul>
+									</footer>
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<header>
+										<h2>Tempus consequat</h2>
+									</header>
+									<ul class="divided">
+										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<header>
+										<h2>Ipsum et phasellus</h2>
+									</header>
+									<ul class="divided">
+										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>Vitae tempor lorem</h2>
+									</header>
+									<ul class="social">
+										<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+										<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+										<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+										<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
+										<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+									</ul>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<p>
+												Untitled Incorporated<br />
+												1234 Somewhere Road Suite<br />
+												Nashville, TN 00000-0000
+											</p>
+										</li>
+										<li>
+											<h3>Mail</h3>
+											<p><a href="#">someone@untitled.tld</a></p>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<p>(800) 000-0000</p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-12">
+                            -->
+								
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
